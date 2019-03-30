@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity() {
         if (this.packageManager.isPackageInstalled(C4M_PKG_NAME))
             startActivity(this.packageManager.getLaunchIntentForPackage(C4M_PKG_NAME))
         else
-            Toast.makeText(this, "C4M Agent is not installed.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.c4m_not_installed), Toast.LENGTH_SHORT).show()
     }
 
     fun onAndroidPolicyButtonClick(view: View) {
         if (this.packageManager.isPackageInstalled(ANDROID_DPC_PKG_NAME))
             startActivity(this.packageManager.getLaunchIntentForPackage(ANDROID_DPC_PKG_NAME))
         else
-            Toast.makeText(this, "Android Device Policy is not installed.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.android_dpc_not_installed), Toast.LENGTH_SHORT).show()
     }
 }

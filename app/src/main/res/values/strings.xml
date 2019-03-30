@@ -3,4 +3,6 @@
     <string name="open_settings">Open Settings</string>
     <string name="open_c4m">Open C4M</string>
     <string name="open_android_policy">Open Android Policy</string>
+    <string name="c4m_not_installed">C4M Agent is not installed.</string>
+    <string name="android_dpc_not_installed">Android Device Policy is not installed.</string>
 </resources>
